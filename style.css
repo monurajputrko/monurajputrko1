@@ -19,6 +19,18 @@ section .title::before {
     background: #dc143c
 }
 
+
+#resumeM{
+    color: #fff30a;
+    font-weight: 700;
+}
+
+#resumeM:hover{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .owl-dots,
 .scroll-up-btn,
 .teams .carousel .card,
