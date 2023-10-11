@@ -47,7 +47,9 @@ footer span a {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif
+    
 }
 
 html {
@@ -870,6 +872,10 @@ a{
 .skills-card>img {
     width: 50%;
     height: 50%;
+}
+
+.skills-card{
+    border: 3px solid #9D58D1;
 }
 
 .skills-card>span {
