@@ -1,21 +1,4 @@
 
-// document.getElementById("resume-link-1").addEventListener("click", NewTab);
-// document.getElementById("resume-link-2").addEventListener("click", NewTab);
-// var premu = document.querySelector("#premu");
-// premu.addEventListener("click", NewTab() )
-// var premu1 = premu.textContent = "Nalla";
-// console.log(premu);
-// function NewTab() {
-//   window.open(
-//     "https://drive.google.com/file/d/1B9D2O6wk6Qo1A3X73ZSCxuCU2hZG-WHV/view?usp=sharing",
-//     "_blank"
-//   );
-// }
-
-
-
-
-console.log("Function is Called");
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script

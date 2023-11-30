@@ -31,7 +31,7 @@
                 <li><a href="#tools" class="menu-btn nav-link skills">Tools</a></li>
                 <li><a href="#contact" class="menu-btn nav-link contact">Contact</a></li>
                 <li><a href="#projects" class="menu-btn nav-link projects">Projects</a></li>
-                <li id="resume-button-1"><a onMouseOver="this.style.color='#ECEE81'"
+                <li id="resume-button-1"><a onMouseOver="this.style.color='#9D58D1'"
                     onMouseOut="this.style.color='white'" href="Monu-Singh-Resume.pdf" id="resume-link-1" style=" color: white; font-weight: 700; font-size: 20px;" target="_blank" class="nav-link resume" download="Monu-Singh-Resume.pdf">Resume</a></li>
             </ul>
             <div class="menu-btn"><i class="fas fa-bars"></i></div>
@@ -594,5 +594,99 @@
 
     
 </body>
+<script>
+    
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                // sticky navbar on scroll script
+                if (this.scrollY > 20) {
+                    $('.navbar').addClass("sticky");
+                } else {
+                    $('.navbar').removeClass("sticky");
+                }
 
+                // scroll-up button show/hide script
+                if (this.scrollY > 500) {
+                    $('.scroll-up-btn').addClass("show");
+                } else {
+                    $('.scroll-up-btn').removeClass("show");
+                }
+            });
+
+            // slide-up script
+            $('.scroll-up-btn').click(function () {
+                $('html').animate({ scrollTop: 0 });
+                // removing smooth scroll on slide-up button click
+                $('html').css("scrollBehavior", "auto");
+            });
+
+            $('.navbar .menu li a').click(function () {
+                // applying again smooth scroll on menu items click
+                $('html').css("scrollBehavior", "smooth");
+            });
+
+            // toggle menu/navbar script
+            $('.menu-btn').click(function () {
+                $('.navbar .menu').toggleClass("active");
+                $('.menu-btn i').toggleClass("active");
+            });
+
+            // typing text animation script
+            var typed = new Typed(".typing", {
+                strings: ["Full Stack Devloper", "Frontend Devloper", "Backend Devloper", "Freelancer"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+
+            var typed = new Typed(".typing-2", {
+                strings: ["Full Stack Devloper", "Frontend Devloper", "Backend Devloper", "Freelancer"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+
+
+            // owl carousel script
+            $('.carousel').owlCarousel({
+                margin: 20,
+                loop: true,
+                autoplay: true,
+                autoplayTimeOut: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: false
+                    }
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let resume1 = document
+                .getElementById("resume-button-1")
+                .addEventListener("click", NewTab);
+            let resume2 = document
+                .getElementById("resume-button-2")
+                .addEventListener("click", NewTab);
+
+            function NewTab() {
+                window.open(
+                    "https://drive.google.com/file/d/1iv4fNljJaNlYvW6MDBxKHFgGYEYTpmBh/view",
+                    "_blank"
+                );
+            }
+        });
+    
+
+</script>
 </html>
