@@ -1,3 +1,15 @@
+
+ let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
+    let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+
+    function NewTab() {
+      window.open(
+        "https://drive.google.com/file/d/1B9D2O6wk6Qo1A3X73ZSCxuCU2hZG-WHV/view?usp=sharing",
+        "_blank"
+      );
+    }
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -47,16 +59,7 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-
-     let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
-    let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
-
-    function NewTab() {
-      window.open(
-        "https://drive.google.com/file/d/1B9D2O6wk6Qo1A3X73ZSCxuCU2hZG-WHV/view?usp=sharing",
-        "_blank"
-      );
-    }
+    
     
     // owl carousel script
     $('.carousel').owlCarousel({
