@@ -298,7 +298,7 @@ a {
 }
 
 .about .about-content .left img {
-    /* height: 450px; */
+    height: 450px;
     width: 400px;
     object-fit: contain;
     border-radius: 6px
