@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function NewTab() {
     window.open(
-      "https://drive.google.com/file/d/1PjRfXnHhBmQJKOqxwahU-ZXNLhQdKTb3/view?usp=sharing",
+      "https://drive.google.com/file/d/1R-yhF8M6XdPq1VZEC3FgeNHNqpMsSRgJ/view?usp=sharing",
       "_blank"
     );
   }
