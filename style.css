@@ -52,7 +52,7 @@ footer span a {
     
 }
 
-/* html {
+html {
     scroll-behavior: smooth
 }
 
@@ -70,7 +70,7 @@ footer span a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555
-} */
+}
 
 section {
     padding: 100px 0
@@ -898,7 +898,7 @@ a{
 
 ::-webkit-scrollbar {
     width: .5rem;
-    background-color: rgba(32, 61, 114, 0.3);
+    background-color: red;
     border: .5rem;
 }
 
