@@ -13,6 +13,8 @@ section .title::before {
     transition: .3s
 }
 
+
+
 .home1 .home1-content a,
 .scroll-up-btn {
     border-radius: 6px;
